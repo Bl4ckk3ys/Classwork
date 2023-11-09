@@ -31,21 +31,54 @@ void SumOfMatrix(int* matrix1, int* matrix2, int* matrix3){
         }
     }
 }
+void print_two_int(double* nums){
+    int* IntArray = (int*)nums;
+    printf("%d %d\n",IntArray[0],IntArray[1]);
+}
+
+void operate(int a, int b, int* pS, int* pR, int* pP, double* pD){
+    *pS = a+b;
+    *pR = a-b;
+    *pP = a*b;
+    if(b!=0){
+        *pD = (double)a/b;
+    }
+    else pD = 0;
+}
+    
+
 int main(){
-    int* matrix1 = malloc(sizeof(int)*9);
-    int* matrix2 = malloc(sizeof(int)*9);
-    int* matrix3 = malloc(sizeof(int)*9);
-    for (int i = 0; i<9; i++){
-        matrix1[i] = i;
-        matrix2[i] = 8-i;
-    }
-    SumOfMatrix(matrix1,matrix2,matrix3);
-    for(int i = 0;i<3;i++){
-        for(int j = 0;j<3;j++){                                     
-            printf("%d\t",matrix3[i*3+j]);
-        }
-        printf("\n");
-    }
+    int a = 10, b = 5, s, r, p;
+    double d;
+    operate(a,b,&s,&r,&p,&d);
+    printf("%d %d %d %d %d %lf\n",a,b,s,r,p,d);
+
+
+    // int first = 10;
+    // int second = 1000;
+
+    // int* array = malloc(sizeof(int)*2);
+    // array[0] = first;
+    // array[1] = second;
+
+    // double* pointer = (double*)array;
+
+    // print_two_int(pointer);
+
+    // int* matrix1 = malloc(sizeof(int)*9);
+    // int* matrix2 = malloc(sizeof(int)*9);
+    // int* matrix3 = malloc(sizeof(int)*9);
+    // for (int i = 0; i<9; i++){
+    //     matrix1[i] = i;
+    //     matrix2[i] = 8-i;
+    // }
+    // SumOfMatrix(matrix1,matrix2,matrix3);
+    // for(int i = 0;i<3;i++){
+    //     for(int j = 0;j<3;j++){                                     
+    //         printf("%d\t",matrix3[i*3+j]);
+    //     }
+    //     printf("\n");
+    // }
     // int index;
     // int* pArray = generate(10);
     // randomReplace(pArray,10);
