@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/s23380420@unn.global/Projects/Classwork/build",
+  "command": "/usr/bin/g++-12    -std=c++17 -g -o CMakeFiles/main.dir/main.cpp.o -c /home/s23380420@unn.global/Projects/Classwork/CPP/main.cpp",
+  "file": "/home/s23380420@unn.global/Projects/Classwork/CPP/main.cpp"
+}
+]
