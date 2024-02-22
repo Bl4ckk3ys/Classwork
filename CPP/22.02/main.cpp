@@ -17,5 +17,5 @@ int main(){
     std::cout << fract_copy;
  
     Fraction* fract_pointer = new Fraction();
-
+    delete fract_pointer;
 }
