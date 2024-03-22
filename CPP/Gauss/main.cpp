@@ -43,6 +43,7 @@ int main(){
 
   Print(arr, b, N);
   x = gauss(arr, b, N);
+  
   for (int i = 0; i < N; i++) std::cout << "x[" << i << "]=" << x[i] << std::endl;
   
   for(int k = 0;k<N;k++){
