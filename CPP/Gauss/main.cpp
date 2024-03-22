@@ -33,16 +33,13 @@ int main(){
   for (int i = 0; i < N; i++){
     arr[i] = new double[N];
     arr1[i] = new double[N];
+    b[i] = rand()%10;
+    b1[i] = b[i];
     for (int j = 0; j < N; j++){
       arr[i][j] = rand()%10;
       arr1[i][j]==arr[i][j];
     }
   }
-  for (int i = 0; i < N; i++){
-    b[i] = rand()%10;
-    b1[i] = b[i];
-  }
-
 
   Print(arr, b, N);
   x = gauss(arr, b, N);
