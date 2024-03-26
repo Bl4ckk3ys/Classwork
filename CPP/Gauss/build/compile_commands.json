@@ -1,7 +1,8 @@
 [
 {
-  "directory": "/home/s23380420@unn.global/Projects/Classwork/CPP/Gauss/build",
-  "command": "/usr/bin/g++-12   -g -o CMakeFiles/main.dir/main.cpp.o -c /home/s23380420@unn.global/Projects/Classwork/CPP/Gauss/main.cpp",
-  "file": "/home/s23380420@unn.global/Projects/Classwork/CPP/Gauss/main.cpp"
+  "directory": "D:/Code/Classwork/CPP/Gauss/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -g -std=gnu++17 -o CMakeFiles\\main.dir\\main.cpp.obj -c D:\\Code\\Classwork\\CPP\\Gauss\\main.cpp",
+  "file": "D:\\Code\\Classwork\\CPP\\Gauss\\main.cpp",
+  "output": "CMakeFiles\\main.dir\\main.cpp.obj"
 }
 ]

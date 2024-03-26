@@ -26,7 +26,7 @@ public:
     }
 
     bool IsValid = true;
-
+    
     void Print();//Метод, сигнатура тут, сам код в Fraction.cpp
     inline void PrintDouble(){
         std::cout << static_cast<double>(_num)/_denom << std::endl;
