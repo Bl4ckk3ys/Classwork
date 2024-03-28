@@ -11,8 +11,8 @@ void Fraction::SetDenom(uint32_t newDenom){
     _denom = newDenom;
 }
 
-void Fraction::SetNum(int32_t newNum){
-    _num = newNum;
+void Fraction::SetNum(int32_t _num){
+    this -> _num = _num; //указатель на объект, берем из него поле _num и присваиваем _num который передала ф-ия
 }
 
 Fraction::Fraction(){
