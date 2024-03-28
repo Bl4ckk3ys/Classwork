@@ -1,0 +1,3 @@
+/home/s23380420@unn.global/Projects/Classwork/CPP/28.03/build/CMakeFiles/main.dir
+/home/s23380420@unn.global/Projects/Classwork/CPP/28.03/build/CMakeFiles/edit_cache.dir
+/home/s23380420@unn.global/Projects/Classwork/CPP/28.03/build/CMakeFiles/rebuild_cache.dir
