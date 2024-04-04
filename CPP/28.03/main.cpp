@@ -1,4 +1,4 @@
-#include "Vector.h"
+#include "Matrix.h"
 
 int main(){
     double* array_for_vec2 = new double[10]{
@@ -6,4 +6,8 @@ int main(){
     };
     Vector<int> vec1 = Vector<int>(10);
     Vector<double> vec2 = Vector<double>(10,array_for_vec2);
+
+    Matrix<int> matrix = Matrix<int>(10);
+
+    
 }
