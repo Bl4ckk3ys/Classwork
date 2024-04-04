@@ -1,3 +1,8 @@
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+#include <math.h>
+
 void Print(double** a, double* y, int n){
   for (int i = 0; i < n; i++){
     for (int j = 0; j < n; j++){
@@ -9,26 +14,30 @@ void Print(double** a, double* y, int n){
   }
   return;
 }
+
 double* gauss(double** a, double* y, int n){
-  double* x, max;
+  double* x;
+  double max = 0;
   int k, index;
   const double eps = 0.00001; 
   x = new double[n];
   k = 0;
   while (k < n){
-    max = abs(a[k][k]);
+    max = fabs(a[k][k]);
     index = k;
     for (int i = k + 1; i < n; i++){
-      if (abs(a[i][k]) > max){
-        max = abs(a[i][k]);
+      if (fabs(a[i][k]) > max){
+        max = fabs(a[i][k]);
         index = i;
       }
     }
-  
     if (max < eps){
-      std::cout << "Система не имеет решений ";
-      return 0;
-    }
+      std::cout << "Система не имеет решений" << std::endl;
+      exit(1);
+      }
+    
+  
+  
     for (int j = 0; j < n; j++){
       double temp = a[k][j];
       a[k][j] = a[index][j];
@@ -40,7 +49,7 @@ double* gauss(double** a, double* y, int n){
     
     for (int i = k; i < n; i++){
       double temp = a[i][k];
-      if (abs(temp) < eps) continue;
+      if (fabs(temp) < eps) continue;
       for (int j = k; j < n; j++)
         a[i][j] = a[i][j] / temp;
       y[i] = y[i] / temp;
@@ -52,10 +61,22 @@ double* gauss(double** a, double* y, int n){
     k++;
   }
 
-  for (k = n - 1; k >= 0; k--){
+  for(k = n - 1; k >= 0; k--){
     x[k] = y[k];
     for (int i = 0; i < k; i++)
       y[i] = y[i] - a[i][k] * x[k];
   }
   return x;
+}
+
+
+double* residual_vector(double** arr,double* b, double* x,int  N){
+  for(int k = 0;k < N;k++){
+    double R = 0;
+    for(int j = 0; j < N; j++){
+      R += x[j]*arr[k][j];   
+    }
+    b[k]-= R;
+  }
+  return b;
 }
