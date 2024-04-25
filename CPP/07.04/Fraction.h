@@ -34,26 +34,32 @@ public:
     }
 
     //Перегрузка операции вывода в консоль
-    friend std::ostream& operator<<(std::ostream& os, const Fraction& tmp){ //принимает ссылку на поток вывода, конст ссылку на наш класс 
+
+    friend std::ostream& operator<<(std::ostream& os, const Fraction& tmp){ 
         os << tmp._num << "/" << tmp._denom << std::endl;
     }
-
-    bool operator> (const Fraction& tmp) const{
-        int32_t new_num1 = _num * tmp._denom;
-        int32_t new_num2 = tmp._num * _denom;
-        return new_num1 > new_num2;
+    Fraction operator+(const Fraction& tmp)const{
+        int32_t new_num = tmp._num * static_cast<int32_t>(_denom) + _num * static_cast<int32_t>(tmp._denom);    
+        uint32_t new_denom = _denom * tmp._denom;
+        return Fraction(new_num, new_denom);
     }
-
-    bool operator< (const Fraction& tmp) const{
-        int32_t new_num1 = _num * tmp._denom;
-        int32_t new_num2 = tmp._num * _denom;
-        return new_num1 < new_num2;
+    bool operator<(const Fraction& tmp)const{
+        return (tmp._num * static_cast<int32_t>(_denom)) < (_num * static_cast<int32_t>(tmp._denom));
     }
-
-    bool operator== (const Fraction& tmp) const{
-        int32_t new_num1 = _num * tmp._denom;
-        int32_t new_num2 = tmp._num * _denom;
-        return new_num1 == new_num2;
+    bool operator<=(const Fraction& tmp)const{
+        return (tmp._num * static_cast<int32_t>(_denom)) <= (_num * static_cast<int32_t>(tmp._denom));
+    }
+    bool operator>(const Fraction& tmp)const{
+        return (tmp._num * static_cast<int32_t>(_denom)) > (_num * static_cast<int32_t>(tmp._denom));
+    }
+    bool operator>=(const Fraction& tmp)const{
+        return (tmp._num * static_cast<int32_t>(_denom)) >= (_num * static_cast<int32_t>(tmp._denom));
+    }
+    bool operator==(const Fraction& tmp)const{
+        return (tmp._num * static_cast<int32_t>(_denom)) == (_num * static_cast<int32_t>(tmp._denom));
+    }
+    bool operator!=(const Fraction& tmp)const{
+        return (tmp._num * static_cast<int32_t>(_denom)) != (_num * static_cast<int32_t>(tmp._denom));
     }
     
     //ДЗ определить конструктор следующего вида: 
