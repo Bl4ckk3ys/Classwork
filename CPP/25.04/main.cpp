@@ -106,7 +106,10 @@ public:
     const std::string& GetName() const{
         return _name;
     }
-    std::string Voice() const{
+    //Абстрактным является такой класс у которого есть виртуальные методы и хотя бы один метод нереализован.
+
+    //virtual std::string Voice() const = 0;//Показывает, что классу-наследнику нужно определить данны метод самому
+    virtual std::string Voice() const{//Класс стал Абстрактным 
         return "Base voice";
     }
 };
@@ -116,7 +119,7 @@ public:
     Cat(const std::string& name) : Animal(name){
 
     }
-    std::string Voice() const{
+    std::string Voice() const override{
         return "Meow";
     }
 };
@@ -126,9 +129,25 @@ public:
     Dog(const std::string& name) : Animal(name){
 
     }
-     std::string Voice() const{
+     std::string Voice() const override{
         return "Woof";
     }    
+};
+
+class IConcreteClass1{//Это Интерфейс (т.е полностью абстрактный класс или шаблон)
+public:
+    virtual void aasd() = 0;
+    virtual int Foo() = 0;
+};
+
+class IConcreteClass2{
+public:
+    virtual void Cddd() = 0;
+    virtual int Foo() = 0;
+};
+//Ромбовидная проблема (когда функции внутри интерфейсов называется одинаково)
+class Realisation: public IConcreteClass1, public IConcreteClass2{
+
 };
 
 void Process(const Animal& obj){
@@ -155,6 +174,6 @@ int main(){
 
     A* a_elems = new A[6] {a, b, ab, B(), A(), C()};
     A** a_elems1 = new A*[3] {&a,&b};
-    std::cout << "Hello world" << std::endl;
+
     return 0;
 }
