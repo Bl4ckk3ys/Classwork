@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/Code/Classwork/CPP/build"
+			"value" : "d:/Code/Classwork/CPP/28.03/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -139,10 +139,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "C:/msys64/ucrt64/bin/g++.exe"
 		},
 		{
@@ -439,7 +439,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Code/Classwork/CPP/build/CMakeFiles/pkgRedirects"
+			"value" : "D:/Code/Classwork/CPP/28.03/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -511,7 +511,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Code/Classwork/CPP"
+			"value" : "D:/Code/Classwork/CPP/28.03"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -523,7 +523,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/CPlusPlusBestC"
+			"value" : "C:/Program Files (x86)/LANGUAGES"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -743,7 +743,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "CPlusPlusBestC"
+			"value" : "LANGUAGES"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1138,7 +1138,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "CPlusPlusBestC_BINARY_DIR",
+			"name" : "LANGUAGES_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1147,10 +1147,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Code/Classwork/CPP/build"
+			"value" : "D:/Code/Classwork/CPP/28.03/build"
 		},
 		{
-			"name" : "CPlusPlusBestC_IS_TOP_LEVEL",
+			"name" : "LANGUAGES_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1162,7 +1162,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "CPlusPlusBestC_SOURCE_DIR",
+			"name" : "LANGUAGES_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1171,7 +1171,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Code/Classwork/CPP"
+			"value" : "D:/Code/Classwork/CPP/28.03"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
