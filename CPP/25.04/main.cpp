@@ -112,6 +112,10 @@ public:
     virtual std::string Voice() const{//Класс стал Абстрактным 
         return "Base voice";
     }
+
+    virtual ~Animal(){
+        std::cout<<"~Animal"<<std::endl;
+    }
 };
 
 class Cat : public Animal{
@@ -121,6 +125,9 @@ public:
     }
     std::string Voice() const override{
         return "Meow";
+    }
+    ~Cat(){
+        std::cout<<"~Cat"<<std::endl;
     }
 };
 
@@ -132,6 +139,9 @@ public:
      std::string Voice() const override{
         return "Woof";
     }    
+    ~Dog(){
+        std::cout<<"~Dog"<<std::endl;
+    }
 };
 
 class IConcreteClass1{//Это Интерфейс (т.е полностью абстрактный класс или шаблон)
@@ -154,11 +164,56 @@ void Process(const Animal& obj){
     std::cout << obj.GetName() << " say " << obj.Voice() << std::endl;
 }
 
+class Device{
+public:
+    Device(){
+        std::cout<<"Device Construct"<< std::endl;
+    }
+    void TurnOn(){
+        std::cout<<"Device is turned on."<<std::endl;
+    }
+};
+
+class Monitor : virtual public Device{
+public:
+    void TurnOn(){
+        std::cout<<"Monitor is turned on."<<std::endl;
+    }
+};
+
+class System_Block : virtual public Device{
+public:    
+    void TurnOn(){
+        std::cout<<"System_Block is turned on."<<std::endl;
+    }
+};
+
+class Laptop : public Monitor, public System_Block{
+public:
+    void TurnOn(){
+        Monitor::TurnOn();
+        System_Block::TurnOn();
+        std::cout << "Laptop is on." << std::endl;
+    }
+};
+
+
 int main(){
-    Cat cat = Cat("SISYA");
-    Dog dog = Dog("BOB");
-    Process(cat);
-    Process(dog);
+    Laptop laptop;
+    laptop.TurnOn();
+
+
+    // Cat cat = Cat("SISYA");
+    // Dog dog = Dog("BOB");
+
+    // Animal** zoo = new Animal*[2] {new Cat("A"), new Dog("B")};
+
+    // Process(*zoo[0]);
+    // Process(*zoo[1]);
+
+    // delete zoo[0];
+    // delete zoo[1];
+    // delete[] zoo;
 
 //=========================================
     Pasport pasport = Pasport();
