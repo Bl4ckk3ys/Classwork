@@ -3,11 +3,9 @@
 #include <math.h>
 
 
-template<typename T>
-class Matrix;
+template<typename T> class Matrix;
 
-template<typename T>
-class Vector{
+template<typename T> class Vector{
 private:
     T* _array;
     size_t _size;

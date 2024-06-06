@@ -15,8 +15,8 @@ int main(){
 
     Matrix<double> matrix = Matrix<double>(3, 3);
     Matrix<double> matrix1 = Matrix<double>(3, 3);
-    matrix.Completion_matr();
-    matrix1.Completion_matr();
+    matrix.MatrixFill();
+    matrix1.MatrixFill();
     // std::cout << matrix << std::endl;
     // std::cout << matrix1 << std::endl;
     //matrix1.Transposition();

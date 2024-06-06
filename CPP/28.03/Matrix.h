@@ -2,14 +2,13 @@
 #include "Vector.h"
 #include <random>
 
-template<typename T>
-class Matrix{
+template<typename T> class Matrix{
 private:
     Vector<T>* _vectors;
     size_t _size;
     double _det;
     // }
-    double poisk(const Matrix& A, size_t size, double ratio){
+    double find(const Matrix& A, size_t size, double ratio){
         double opred = 0;
         double ratio1 = 1;
         double count = 0;
@@ -42,7 +41,7 @@ private:
                 else 
                     ratio1 = (-1) * A[0][k];
                 ratio1 *= ratio;
-                count += poisk(new_mat, cons - 1, ratio1);
+                count += find(new_mat, cons - 1, ratio1);
             }
         }
 
@@ -55,7 +54,7 @@ private:
             exit;
         }
         double ratio = 1;
-        _det = poisk(A, _size, ratio);
+        _det = find(A, _size, ratio);
     }
 public:
     Matrix() = delete;
@@ -155,7 +154,7 @@ public:
         return dist(gen) % 15;
     }
 
-    void Completion_matr(){
+    void MatrixFill(){
         for (int i = 0; i < _size; i++){
             for (int j = 0; j < _vectors->GetSize(); j ++){
                 _vectors[i][j] = rand();
