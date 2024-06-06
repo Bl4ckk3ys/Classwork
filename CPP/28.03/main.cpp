@@ -1,41 +1,43 @@
-#include "matrix.h"
-#include <random>
-#include <time.h>
-
+#include <iostream>
+#include "Matrix.h"
 
 int main(){
-    srand(time(NULL));
-    // matrix matr1 = matrix<double>(4, 4, 1);
-    // matr1.print_matrix();
-    // for (int i = 0; i < 4; i++){
-    //     for (int j = 0; j < 4; j++){
-    //         if (j % 2){
-    //             matr1[i][j] = i;
-    //         }
-    //         else if (i % 2){
-    //             matr1[i][j] = j + i;
-    //         }
-    //         else{
-    //             matr1[i][j] = j - i;
-    //         }
-    //     }
-    // }
-    // matr1[3][3] = 9;
-    // matr1.print_matrix();
-    // matrix matr2 = matr1.reverse_matrix();
-    // matr2.print_matrix();
-    // matrix<double> matr3 = matr1 * matr2;
-    // matrix<double> matr4 = matr3 / matr1;
-    // matr3.print_matrix();
-    // matr4.print_matrix();
-    // matrix<double> matr1 = matrix<double>(4, 4, 1);
-    // matrix matr2 = matrix<int>(4, 4, 1);
-    // matrix<double> matr3 = matr1 * matr1.reverse_matrix(); 
-    // matrix<double> matr4 = matr1 / matr1;
-    // std::cout<<matr3<<std::endl<<matr4<<std::endl;
-    Vector<int> vec1 = {1, 2, 4};
-    Vector<int> vec2 = {2, 4, 6};
-    Vector vec3 = vec1.vectors_multiplicate(vec2);
-    std::cout<<vec3<<std::endl;
+    // double* array_for_vec2 = new double[3]{1, 2, 3};
+    // Vector<int> vec1 = Vector<int>(3);
+    Vector<int> vec1_1 = {1, 2, 3};
+    Vector<int> vec2 = {3, 4, 5};
+    std::cout << vec1_1 % vec2 << std::endl;
+
+    // Vector<int> vec3 = vec1_1 + vec2;
+    // Vector<int> vec4 = vec1_1 - vec2;
+    
+    // std::cout << vec2 << std::endl;
+
+    Matrix<double> matrix = Matrix<double>(3, 3);
+    Matrix<double> matrix1 = Matrix<double>(3, 3);
+    matrix.Completion_matr();
+    matrix1.Completion_matr();
+    // std::cout << matrix << std::endl;
+    // std::cout << matrix1 << std::endl;
+    //matrix1.Transposition();
+    //std::cout << matrix1 << std::endl;
+    Matrix<double> matrix2 = matrix + matrix1;
+    // Matrix<int> matrix3 = matrix - matrix1;
+    //Matrix<double> matrix4 = matrix * matrix1; //Matrix(*****);
+    std::cout << matrix2 << std::endl;
+    // std::cout << matrix3 << std::endl;
+    //std::cout << matrix4 << std::endl;
+    //Matrix<double> ob_matrix = matrix.Inverse_matrix(matrix);
+    //Matrix<double> matrix5 = matrix / matrix1;
+    //std::cout << matrix5 << std::endl;
+    //std::cout << ob_matrix << std::endl;
+    //Matrix<double> matrix7 = ob_matrix * matrix;
+    //std::cout << matrix7 << std::endl;
+    //matrix7.Transposition();
+    //std::cout << matrix7 << std::endl;
+    //delete [] array_for_vec2;
     return 0;
 }
+//перегрузка оператора +, -, *, /.
+//Метод нахождения обратной матрицы, нахождения опередлителя матрицы любого парядка, транспонирование матрицы, рандомное заполнение.
+//*Векторное произведение.
