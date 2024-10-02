@@ -46,5 +46,8 @@ size_t BitField::GetMemIndex(size_t n)const{//позволяет вернуть 
 }
 
 uint8_t BitField::GetBit(size_t n) const{
-    
+    //check out out of range
+    //getmask(n)
+    //getmemindex(n)
+    //&
 }
