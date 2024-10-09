@@ -25,7 +25,7 @@ public:
     BitField operator|(const BitField& tmp);
     BitField operator^(const BitField& tmp);
     bool operator==(const BitField& tmp);
-
+    BitField operator~();
     ~BitField(){
         //очистить и присвоить null_ptr
     };
