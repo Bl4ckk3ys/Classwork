@@ -1,0 +1,3 @@
+D:/Code/Classwork/CPP/28.03/build/CMakeFiles/main.dir
+D:/Code/Classwork/CPP/28.03/build/CMakeFiles/edit_cache.dir
+D:/Code/Classwork/CPP/28.03/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/s23380420@unn.global/Projects/Classwork/CPP/07.04/build",
+  "command": "/usr/bin/g++    -std=c++17 -g -o CMakeFiles/main.dir/main.cpp.o -c /home/s23380420@unn.global/Projects/Classwork/CPP/07.04/main.cpp",
+  "file": "/home/s23380420@unn.global/Projects/Classwork/CPP/07.04/main.cpp"
+},
+{
+  "directory": "/home/s23380420@unn.global/Projects/Classwork/CPP/07.04/build",
+  "command": "/usr/bin/g++    -std=c++17 -g -o CMakeFiles/main.dir/Fraction.cpp.o -c /home/s23380420@unn.global/Projects/Classwork/CPP/07.04/Fraction.cpp",
+  "file": "/home/s23380420@unn.global/Projects/Classwork/CPP/07.04/Fraction.cpp"
+},
+{
+  "directory": "/home/s23380420@unn.global/Projects/Classwork/CPP/07.04/build",
+  "command": "/usr/bin/g++    -std=c++17 -g -o CMakeFiles/main.dir/Complex.cpp.o -c /home/s23380420@unn.global/Projects/Classwork/CPP/07.04/Complex.cpp",
+  "file": "/home/s23380420@unn.global/Projects/Classwork/CPP/07.04/Complex.cpp"
+}
+]
