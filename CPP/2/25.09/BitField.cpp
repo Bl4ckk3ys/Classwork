@@ -1,10 +1,5 @@
 #include "BitField.h"
 
-BitField::BitField(){
-    _sizeBit = 0;
-    _sizeMem = 0;
-    _mem = 0;
-}
 
 BitField::BitField(size_t len){
     _sizeBit = len;
@@ -52,10 +47,10 @@ size_t BitField::GetMemIndex(size_t n)const{//позволяет вернуть 
 }
 
 uint8_t BitField::GetBit(size_t n) const{
-    //check out out of range
-    //getmask(n)
-    //getmemindex(n)
-    //&
+    uint16_t mask1 = GetMask(n);
+    uint16_t mask2 = _mem[GetMemIndex(n)];
+    if((mask2 & mask1)==0) return 0;
+    return 1;
 }
 
 

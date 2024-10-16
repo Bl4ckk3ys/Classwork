@@ -9,6 +9,7 @@ public:
     Set(const Set& set);
     Set(const BitField& bf);
     operator BitField();
+    
     std::vector<uint64_t> GetPrimary();
     
     size_t GetMaxPower();
