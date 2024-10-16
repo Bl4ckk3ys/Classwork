@@ -1,5 +1,11 @@
 #include "BitField.h"
 
+BitField::BitField(){
+    _sizeBit = 0;
+    _sizeMem = 0;
+    _mem = 0;
+}
+
 BitField::BitField(size_t len){
     _sizeBit = len;
     _sizeMem = (len / (8 * sizeof(uint16_t))) + (len % (8 * sizeof(uint16_t))!= 0);

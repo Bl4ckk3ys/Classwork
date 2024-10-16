@@ -1,8 +1,0 @@
-[
-{
-  "directory": "D:/Code/Classwork/CPP/28.03/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -g -o CMakeFiles\\main.dir\\main.cpp.obj -c D:\\Code\\Classwork\\CPP\\28.03\\main.cpp",
-  "file": "D:\\Code\\Classwork\\CPP\\28.03\\main.cpp",
-  "output": "CMakeFiles\\main.dir\\main.cpp.obj"
-}
-]

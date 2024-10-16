@@ -14,6 +14,7 @@ private:
     uint16_t GetMask(size_t n) const;//получение маски конкретного бита
 
 public:
+    BitField();
     BitField(size_t sizeBit);
     BitField(const BitField& tmp);
     size_t GetSize() const;
