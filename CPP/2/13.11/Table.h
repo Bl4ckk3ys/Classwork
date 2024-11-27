@@ -8,8 +8,16 @@ private:
     T1* _col1;
     T2* _col2;
     size_t _count;
+    std::string _titleCol1;
+    std::string _titleCol2;
 public:
-    Table(size_t size = 20){
+    /// @brief "Класс принимает размер, название первого и второго столбика."
+    /// @param size 
+    /// @param _titleCol1 
+    /// @param _titleCol2 
+    Table(size_t size = 20, std::string titleCol1 = "Col1", std::string titleCol2 = "Col2"){
+        _titleCol1 = titleCol1;
+        _titleCol2 = titleCol2;
         _tableSize = size;
         _col1 = new T1[size];
         _col2 = new T2[size];

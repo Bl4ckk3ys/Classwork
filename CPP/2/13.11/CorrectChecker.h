@@ -9,7 +9,7 @@ private:
 
 public:
     bool CheckBrackets(const std::string s){
-        Table <int, int> tableOfBrackets; 
+        Table <int, int> tableOfBrackets(20,"(",")"); 
         for(size_t i = 0; i < s.size(); i++){
             if(s[i]  == '('){
                 _brackets.Push(i);

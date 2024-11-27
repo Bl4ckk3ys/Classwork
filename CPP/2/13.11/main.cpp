@@ -7,7 +7,7 @@ int some_function(){
 }
 
 int main(){
-
+    return 0;
 }
 
 
