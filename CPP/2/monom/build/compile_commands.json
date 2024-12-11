@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/s23380420@unn.global/Projects/Classwork/CPP/2/monom/build",
+  "command": "/usr/bin/g++-12   -g -o CMakeFiles/main.dir/main.cpp.o -c /home/s23380420@unn.global/Projects/Classwork/CPP/2/monom/main.cpp",
+  "file": "/home/s23380420@unn.global/Projects/Classwork/CPP/2/monom/main.cpp"
+},
+{
+  "directory": "/home/s23380420@unn.global/Projects/Classwork/CPP/2/monom/build",
+  "command": "/usr/bin/g++-12   -g -o CMakeFiles/main.dir/Monom.cpp.o -c /home/s23380420@unn.global/Projects/Classwork/CPP/2/monom/Monom.cpp",
+  "file": "/home/s23380420@unn.global/Projects/Classwork/CPP/2/monom/Monom.cpp"
+},
+{
+  "directory": "/home/s23380420@unn.global/Projects/Classwork/CPP/2/monom/build",
+  "command": "/usr/bin/g++-12   -g -o CMakeFiles/main.dir/Polynom.cpp.o -c /home/s23380420@unn.global/Projects/Classwork/CPP/2/monom/Polynom.cpp",
+  "file": "/home/s23380420@unn.global/Projects/Classwork/CPP/2/monom/Polynom.cpp"
+}
+]
