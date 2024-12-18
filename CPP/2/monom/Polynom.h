@@ -14,7 +14,7 @@ public:
         else{
             Monom* tmp = _head;
             while (tmp != nullptr){
-                tmp = tmp->GetNext();//реализватьне нарушая инкапсуляцию
+                tmp = tmp->GetNext();//реализовать не нарушая инкапсуляцию
             }
         }
     }
