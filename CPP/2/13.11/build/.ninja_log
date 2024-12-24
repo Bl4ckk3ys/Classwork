@@ -1,0 +1,16 @@
+# ninja log v5
+47	1151	7567478003434925	CMakeFiles/main.dir/CorrectChecker.cpp.obj	8c7fdfdac92c2c56
+2	764	7567488511327004	CMakeFiles/main.dir/main.cpp.obj	cf285c340b1a33b3
+766	957	7567488513268549	main.exe	fcb18b21f7bcae3d
+5	779	7567649995707277	CMakeFiles/main.dir/main.cpp.obj	cf285c340b1a33b3
+779	981	7567649997722350	main.exe	fcb18b21f7bcae3d
+4	758	7567650336403648	CMakeFiles/main.dir/main.cpp.obj	cf285c340b1a33b3
+759	950	7567650338278717	main.exe	fcb18b21f7bcae3d
+5	767	7567650777213405	CMakeFiles/main.dir/main.cpp.obj	cf285c340b1a33b3
+767	957	7567650778931408	main.exe	fcb18b21f7bcae3d
+5	757	7567651776896216	CMakeFiles/main.dir/main.cpp.obj	cf285c340b1a33b3
+757	949	7567651778767840	main.exe	fcb18b21f7bcae3d
+5	762	7567663003271783	CMakeFiles/main.dir/main.cpp.obj	cf285c340b1a33b3
+762	957	7567663005144227	main.exe	fcb18b21f7bcae3d
+5	811	7567665786953237	CMakeFiles/main.dir/main.cpp.obj	cf285c340b1a33b3
+812	1001	7567665788759261	main.exe	fcb18b21f7bcae3d
