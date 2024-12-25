@@ -12,6 +12,6 @@ int main(){
 
     Formula f(exp);
     f.Calculate();
-    std::cout<<f;
+    // std::cout<<f;
     return 0;
 }
