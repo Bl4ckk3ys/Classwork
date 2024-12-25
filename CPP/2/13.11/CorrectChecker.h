@@ -147,5 +147,5 @@ public:
         _varTable.AppendRow(s, d);
     }
 
-    ~CorrectChecker();
+
 };
