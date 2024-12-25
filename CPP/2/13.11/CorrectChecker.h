@@ -18,8 +18,11 @@ private:
 public:
     CorrectChecker(): _bracketsTable("(", ")", 20), _brackets(), _varTable("var", "val"){
     }
+    /// @brief проверяет валидность скобок
+    /// @param s 
+    /// @return  
     bool CheckBrackets(const std::string s){
-        int flag = 0;
+        int fl = 0;
         std::vector<int> error;
         for (size_t i = 0; i < s.size(); i++){
             if (s[i] == '(')
@@ -31,24 +34,24 @@ public:
                 catch (const char *error_message){
                     _bracketsTable.AppendRow(std::nullopt, i);
                     error.push_back(i);
-                    flag++;
+                    fl++;
                 }
             }
         }
         while (!_brackets.IsEmpty()){
             _bracketsTable.AppendRow(_brackets.Pop(), std::nullopt);
         }
-        std::cout << _bracketsTable << std::endl;
-        if (!error.empty())
-            std::cout << "error in brackets ";
-        for (size_t i = 0; i < error.size(); i++)
+        std::cout << _bracketsTable << "\n";
+        if (!error.empty()) 
+            std::cout << "Error in brackets. ";
+        for (size_t i = 0; i < error.size(); i++)   
             std::cout << error[i] << " ";
-        std::cout << std::endl;
-        if (flag == 0)
+        std::cout << "\n";
+        if (fl == 0) 
             return _brackets.IsEmpty();
-        else
-            return false;
+        else return false;
     }
+
     void FillVariable(const std::string &s){
         std::string var;
         std::string operators = "(+-*/)";
