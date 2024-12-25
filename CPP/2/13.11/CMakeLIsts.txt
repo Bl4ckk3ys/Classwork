@@ -2,4 +2,4 @@ cmake_minimum_required(VERSION 3.8)
 
 project(LANGUAGES CXX)
 
-add_executable(main main.cpp CorrectChecker.cpp)
+add_executable(main main.cpp)
