@@ -43,3 +43,6 @@ public:
     //     if(_indexLast )
     // };
 };
+
+
+//dz реализовать все те же функции что есть и на cppreference
